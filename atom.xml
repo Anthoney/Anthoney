@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>From to Earth</title>
+  
+  <subtitle>小事成就大事,细节成就完美</subtitle>
+  <link href="https://anthoney.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://anthoney.github.io/"/>
+  <updated>2023-09-08T08:21:24.299Z</updated>
+  <id>https://anthoney.github.io/</id>
+  
+  <author>
+    <name>tangc@from2.net(牛仔酷)</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FlexNet lmtools license vitual adapter Revit配置虚拟网卡</title>
+    <link href="https://anthoney.github.io/2021/09/30/455-FlexNet%20lmtools%20license%20vitual%20adapter%20Revit%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E7%BD%91%E5%8D%A1/"/>
+    <id>https://anthoney.github.io/2021/09/30/455-FlexNet%20lmtools%20license%20vitual%20adapter%20Revit%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E7%BD%91%E5%8D%A1/</id>
+    <published>2021-09-30T12:33:38.000Z</published>
+    <updated>2023-09-08T08:21:24.299Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在最近一次工作中遇到 台式机有多网卡同时还有一个虚拟网卡，为了安装revit的授权文件在修改MAC和HOSTNAME这里踩坑，折腾了半天，将经验记录分享如下：&lt;br /&gt;Share my experience in how to fix setup in lmtools</summary>
+        
+      
+    
+    
+    
+    <category term="GIS" scheme="https://anthoney.github.io/categories/GIS/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>房屋坐向以什么为准 房屋坐向怎么看</title>
+    <link href="https://anthoney.github.io/2021/02/08/454-%E6%88%BF%E5%B1%8B%E5%9D%90%E5%90%91%E4%BB%A5%E4%BB%80%E4%B9%88%E4%B8%BA%E5%87%86%20%E6%88%BF%E5%B1%8B%E5%9D%90%E5%90%91%E6%80%8E%E4%B9%88%E7%9C%8B/"/>
+    <id>https://anthoney.github.io/2021/02/08/454-%E6%88%BF%E5%B1%8B%E5%9D%90%E5%90%91%E4%BB%A5%E4%BB%80%E4%B9%88%E4%B8%BA%E5%87%86%20%E6%88%BF%E5%B1%8B%E5%9D%90%E5%90%91%E6%80%8E%E4%B9%88%E7%9C%8B/</id>
+    <published>2021-02-08T12:45:00.000Z</published>
+    <updated>2023-09-08T08:21:24.300Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;文章是转载和收藏，怕哪天没了。收集下来慢慢研究。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;生活的环境对于每一个人来说都有着很大的影响，因此我们在购买房屋的时候肯定是要注意&lt;/span&gt;&lt;strong&gt;&lt;a class=&quot;pub_keywords&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="人文地理" scheme="https://anthoney.github.io/categories/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>FME Desktop 2021 for Mac安装踩坑教程</title>
+    <link href="https://anthoney.github.io/2021/01/12/453-FME%20Desktop%202021%20for%20Mac%E5%AE%89%E8%A3%85%E8%B8%A9%E5%9D%91%E6%95%99%E7%A8%8B/"/>
+    <id>https://anthoney.github.io/2021/01/12/453-FME%20Desktop%202021%20for%20Mac%E5%AE%89%E8%A3%85%E8%B8%A9%E5%9D%91%E6%95%99%E7%A8%8B/</id>
+    <published>2021-01-12T09:58:31.000Z</published>
+    <updated>2023-09-08T08:21:24.300Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;作为老牌GISer，对FME的热爱深入骨髓。 &lt;br /&gt;&lt;br /&gt;时代在进步，博主的Laptop也从win升级到了Mac&lt;br /&gt;&lt;br /&gt;可惜FME这样的专业软件在Mac安装的教程，网上几乎没中文介绍，或者文不对题骗下载。&lt;br</summary>
+        
+      
+    
+    
+    
+    <category term="GIS" scheme="https://anthoney.github.io/categories/GIS/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>保号google voice附使用建议</title>
+    <link href="https://anthoney.github.io/2018/04/29/452-%E4%BF%9D%E5%8F%B7google%20voice%E9%99%84%E4%BD%BF%E7%94%A8%E5%BB%BA%E8%AE%AE/"/>
+    <id>https://anthoney.github.io/2018/04/29/452-%E4%BF%9D%E5%8F%B7google%20voice%E9%99%84%E4%BD%BF%E7%94%A8%E5%BB%BA%E8%AE%AE/</id>
+    <published>2018-04-29T06:52:53.000Z</published>
+    <updated>2023-09-08T08:21:24.301Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;为了不浪费大家时间，先放出结论，结论是淘宝买一个，简单快捷安全。&lt;br /&gt;&lt;br /&gt;目前关键词被屏蔽，淘宝已经买不到了，微信上相信文章也被block了，大家继续用国内手机号做个好市民，不要老想着有个国外手机号，毕竟现在电信诈骗太多了，说的好像你有手机号能咋样。&lt;br</summary>
+        
+      
+    
+    
+    
+    <category term="软件技术" scheme="https://anthoney.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>5G Wifi Router Band Channel limit修改5GWIFI路由中国频段限制</title>
+    <link href="https://anthoney.github.io/2016/12/14/451-5G%20Wifi%20Router%20Band%20Channel%20limit%E4%BF%AE%E6%94%B95GWIFI%E8%B7%AF%E7%94%B1%E4%B8%AD%E5%9B%BD%E9%A2%91%E6%AE%B5%E9%99%90%E5%88%B6/"/>
+    <id>https://anthoney.github.io/2016/12/14/451-5G%20Wifi%20Router%20Band%20Channel%20limit%E4%BF%AE%E6%94%B95GWIFI%E8%B7%AF%E7%94%B1%E4%B8%AD%E5%9B%BD%E9%A2%91%E6%AE%B5%E9%99%90%E5%88%B6/</id>
+    <published>2016-12-14T15:08:42.000Z</published>
+    <updated>2023-09-08T08:21:24.301Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Conclusion: Please modify the default region for other countries (recommended the United States), all 5G channels are available.&lt;br</summary>
+        
+      
+    
+    
+    
+    <category term="软件技术" scheme="https://anthoney.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>老款iPhone变慢卡顿掉帧发热切换迟缓解决方法分享</title>
+    <link href="https://anthoney.github.io/2016/11/22/450-%E8%80%81%E6%AC%BEiPhone%E5%8F%98%E6%85%A2%E5%8D%A1%E9%A1%BF%E6%8E%89%E5%B8%A7%E5%8F%91%E7%83%AD%E5%88%87%E6%8D%A2%E8%BF%9F%E7%BC%93%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E5%88%86%E4%BA%AB/"/>
+    <id>https://anthoney.github.io/2016/11/22/450-%E8%80%81%E6%AC%BEiPhone%E5%8F%98%E6%85%A2%E5%8D%A1%E9%A1%BF%E6%8E%89%E5%B8%A7%E5%8F%91%E7%83%AD%E5%88%87%E6%8D%A2%E8%BF%9F%E7%BC%93%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E5%88%86%E4%BA%AB/</id>
+    <published>2016-11-22T04:20:56.000Z</published>
+    <updated>2023-09-08T08:21:24.302Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;久未更新，一年一次。&lt;/p&gt;
+&lt;p&gt;近日发现手上的iPhone变慢、卡顿、掉帧、发热、切换迟缓，突然觉得不得不换7了，难道是苹果大阴谋，发布了新机就让老机器变慢。摸索了半天，网上找了很多方法，最后发现此方法比较靠谱：&lt;/p&gt;
+&lt;p&gt;设置&amp;mdash;&amp;mdash;邮件、通讯</summary>
+        
+      
+    
+    
+    
+    <category term="软件技术" scheme="https://anthoney.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python中文字符乱码解决偏方</title>
+    <link href="https://anthoney.github.io/2015/12/13/449-python%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E5%81%8F%E6%96%B9/"/>
+    <id>https://anthoney.github.io/2015/12/13/449-python%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E5%81%8F%E6%96%B9/</id>
+    <published>2015-12-13T14:23:01.000Z</published>
+    <updated>2023-09-08T08:21:24.302Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;站长这么久没出现过？干啥去了&lt;br /&gt;&lt;br /&gt;今日解决一个乱码问题，python界面乱码，百思不得其解，网上翻遍了各种转码方式，真是太麻烦。&lt;br /&gt;&lt;br /&gt;摸索过程中发现一个偏方：不敢独享，发出来以雍读者。&lt;br /&gt;&lt;br</summary>
+        
+      
+    
+    
+    
+    <category term="软件技术" scheme="https://anthoney.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python opencv error 215 imshow 问题</title>
+    <link href="https://anthoney.github.io/2014/06/02/448-Python%20opencv%20error%20215%20imshow%20%E9%97%AE%E9%A2%98/"/>
+    <id>https://anthoney.github.io/2014/06/02/448-Python%20opencv%20error%20215%20imshow%20%E9%97%AE%E9%A2%98/</id>
+    <published>2014-06-02T08:37:25.000Z</published>
+    <updated>2023-09-08T08:21:24.303Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&amp;nbsp;今日在python下运行OpenCV的库，之前一天还好好的可用，但现在运行总报这个错误，网上找了原因，经验主义不够认真。发记录警示自己。&lt;/p&gt;
+&lt;p&gt;错误提示&lt;/p&gt;
+&lt;p&gt;cv2.imshow(&amp;quot;Image&amp;quot;,</summary>
+        
+      
+    
+    
+    
+    <category term="软件技术" scheme="https://anthoney.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python faild_install_package 报错解决办法</title>
+    <link href="https://anthoney.github.io/2014/04/04/447-python%20faild_install_package%20%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>https://anthoney.github.io/2014/04/04/447-python%20faild_install_package%20%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</id>
+    <published>2014-04-04T04:11:15.000Z</published>
+    <updated>2023-09-08T08:21:24.303Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;如果你在加载第三方控件的时候，无法安装可以试试这样的办法。&lt;br /&gt;&lt;br /&gt;If you face this msg in windows use python:&lt;br /&gt;error: package directory ‘***’ does not</summary>
+        
+      
+    
+    
+    
+    <category term="软件技术" scheme="https://anthoney.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>古典诗词</title>
+    <link href="https://anthoney.github.io/2013/06/16/446-%E5%8F%A4%E5%85%B8%E8%AF%97%E8%AF%8D/"/>
+    <id>https://anthoney.github.io/2013/06/16/446-%E5%8F%A4%E5%85%B8%E8%AF%97%E8%AF%8D/</id>
+    <published>2013-06-16T10:32:22.000Z</published>
+    <updated>2023-09-08T08:21:24.303Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1衣带渐宽终不悔，为伊消得人憔悴。－柳永《凤栖梧》&lt;br /&gt;&lt;br /&gt;2死生契阔，与子成说。执子之手，与子偕老。－佚名《诗经邶风击鼓》&lt;br /&gt;&lt;br /&gt;3两情若是久长时，又岂在朝朝暮暮。－秦观《鹊桥仙》&lt;br /&gt;&lt;br</summary>
+        
+      
+    
+    
+    
+    <category term="人文地理" scheme="https://anthoney.github.io/categories/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在excel中vba使用left函数提示错误的参数解决办法</title>
+    <link href="https://anthoney.github.io/2012/11/22/445-%E5%9C%A8excel%E4%B8%ADvba%E4%BD%BF%E7%94%A8left%E5%87%BD%E6%95%B0%E6%8F%90%E7%A4%BA%E9%94%99%E8%AF%AF%E7%9A%84%E5%8F%82%E6%95%B0%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>https://anthoney.github.io/2012/11/22/445-%E5%9C%A8excel%E4%B8%ADvba%E4%BD%BF%E7%94%A8left%E5%87%BD%E6%95%B0%E6%8F%90%E7%A4%BA%E9%94%99%E8%AF%AF%E7%9A%84%E5%8F%82%E6%95%B0%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</id>
+    <published>2012-11-22T04:14:47.000Z</published>
+    <updated>2023-09-08T08:21:24.304Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今日在excel中vba使用left函数时，提示错误的参数，解决办法如下：&lt;br /&gt;Today use left function in Excel VBA, But msg”Error function”&lt;br /&gt;&lt;br /&gt;原函数 &lt;br</summary>
+        
+      
+    
+    
+    
+    <category term="软件技术" scheme="https://anthoney.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用正确的方法解决问题</title>
+    <link href="https://anthoney.github.io/2012/08/09/444-%E7%94%A8%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%96%B9%E6%B3%95%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/"/>
+    <id>https://anthoney.github.io/2012/08/09/444-%E7%94%A8%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%96%B9%E6%B3%95%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/</id>
+    <published>2012-08-09T15:35:33.000Z</published>
+    <updated>2023-09-08T08:21:24.304Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;用正确的方法解决问题100%&lt;br /&gt;Solving the problem with the right way&lt;br /&gt;没有解决不了的问题，只有未找到正确方法的人—杰克.韦尔奇&lt;br /&gt;&lt;br</summary>
+        
+      
+    
+    
+    
+    <category term="心路" scheme="https://anthoney.github.io/categories/%E5%BF%83%E8%B7%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用VBA实现鼠标单击复制excel单元格内容到剪贴板</title>
+    <link href="https://anthoney.github.io/2012/05/30/443-%E7%94%A8VBA%E5%AE%9E%E7%8E%B0%E9%BC%A0%E6%A0%87%E5%8D%95%E5%87%BB%E5%A4%8D%E5%88%B6excel%E5%8D%95%E5%85%83%E6%A0%BC%E5%86%85%E5%AE%B9%E5%88%B0%E5%89%AA%E8%B4%B4%E6%9D%BF/"/>
+    <id>https://anthoney.github.io/2012/05/30/443-%E7%94%A8VBA%E5%AE%9E%E7%8E%B0%E9%BC%A0%E6%A0%87%E5%8D%95%E5%87%BB%E5%A4%8D%E5%88%B6excel%E5%8D%95%E5%85%83%E6%A0%BC%E5%86%85%E5%AE%B9%E5%88%B0%E5%89%AA%E8%B4%B4%E6%9D%BF/</id>
+    <published>2012-05-30T11:47:37.000Z</published>
+    <updated>2023-09-08T08:21:24.304Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;br /&gt;今日，因工作需要重新拾起excel大量数据重复处理，尤其需要从单元格复制内容到剪贴板，懒虫犯，不想反复机械的去按复制，粘贴。&lt;br /&gt;&lt;br /&gt;贴出代码，希望以后可以解决大家的问题，自己也做个收藏。&lt;br /&gt;&lt;br /&gt;&lt;br</summary>
+        
+      
+    
+    
+    
+    <category term="软件技术" scheme="https://anthoney.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vbs编程实例</title>
+    <link href="https://anthoney.github.io/2012/04/28/442-vbs%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/"/>
+    <id>https://anthoney.github.io/2012/04/28/442-vbs%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/</id>
+    <published>2012-04-28T05:12:03.000Z</published>
+    <updated>2023-09-08T08:21:24.305Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1、快速显示ip&lt;br /&gt;Set winsobj&amp;#x3D;Cr&amp;#101;ateObject(“MSWinsock.Winsock”) ‘创建对象&lt;br /&gt;ip&amp;#x3D;winsobj.LocalIP&lt;br /&gt;MsgBox “你的ip是:”&amp;amp;ip&lt;br</summary>
+        
+      
+    
+    
+    
+    <category term="软件技术" scheme="https://anthoney.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>VBS FSO操作全集</title>
+    <link href="https://anthoney.github.io/2012/04/26/441-VBS%20FSO%E6%93%8D%E4%BD%9C%E5%85%A8%E9%9B%86/"/>
+    <id>https://anthoney.github.io/2012/04/26/441-VBS%20FSO%E6%93%8D%E4%BD%9C%E5%85%A8%E9%9B%86/</id>
+    <published>2012-04-26T03:36:08.000Z</published>
+    <updated>2023-09-08T08:21:24.305Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;FSO操作全集&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;工作需要，用到了这个，收集下来以备将来使用&lt;br /&gt;&lt;br /&gt;&amp;lt;script language&amp;#x3D;vbs&amp;gt;&lt;br /&gt;on error resume next&lt;br /&gt;Set</summary>
+        
+      
+    
+    
+    
+    <category term="软件技术" scheme="https://anthoney.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>提不起的时候就放下——宽运法师</title>
+    <link href="https://anthoney.github.io/2011/11/01/440-%E6%8F%90%E4%B8%8D%E8%B5%B7%E7%9A%84%E6%97%B6%E5%80%99%E5%B0%B1%E6%94%BE%E4%B8%8B%E2%80%94%E2%80%94%E5%AE%BD%E8%BF%90%E6%B3%95%E5%B8%88/"/>
+    <id>https://anthoney.github.io/2011/11/01/440-%E6%8F%90%E4%B8%8D%E8%B5%B7%E7%9A%84%E6%97%B6%E5%80%99%E5%B0%B1%E6%94%BE%E4%B8%8B%E2%80%94%E2%80%94%E5%AE%BD%E8%BF%90%E6%B3%95%E5%B8%88/</id>
+    <published>2011-11-01T10:10:17.000Z</published>
+    <updated>2023-09-08T08:21:24.306Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;有许多聪明好学的人，有作为、有成就者，古今中外可谓不胜枚举。但是，也有许多聪明好学的人，无所作为，未见成就，这是什么原因呢？也许真的应了那句俗语：样样通，样样松。&lt;br</summary>
+        
+      
+    
+    
+    
+    <category term="心路" scheme="https://anthoney.github.io/categories/%E5%BF%83%E8%B7%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>膝盖是身体最薄弱的部位</title>
+    <link href="https://anthoney.github.io/2011/09/07/438-%E8%86%9D%E7%9B%96%E6%98%AF%E8%BA%AB%E4%BD%93%E6%9C%80%E8%96%84%E5%BC%B1%E7%9A%84%E9%83%A8%E4%BD%8D/"/>
+    <id>https://anthoney.github.io/2011/09/07/438-%E8%86%9D%E7%9B%96%E6%98%AF%E8%BA%AB%E4%BD%93%E6%9C%80%E8%96%84%E5%BC%B1%E7%9A%84%E9%83%A8%E4%BD%8D/</id>
+    <published>2011-09-07T05:22:51.000Z</published>
+    <updated>2023-09-08T08:21:24.306Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;【长江网讯】　 （大洋网）</summary>
+        
+      
+    
+    
+    
+    <category term="杂谈" scheme="https://anthoney.github.io/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>经典语录--zt</title>
+    <link href="https://anthoney.github.io/2011/09/06/437-%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%BD%95--zt/"/>
+    <id>https://anthoney.github.io/2011/09/06/437-%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%BD%95--zt/</id>
+    <published>2011-09-06T09:41:04.000Z</published>
+    <updated>2023-09-08T08:21:24.307Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&amp;nbsp;&amp;nbsp;儿子要穷养，长大了才知道奋斗；女儿要富教，长大了才不会被诱惑。&lt;br /&gt;女人无所谓正派，正派是因为所受的诱惑不够；男人无所谓忠诚，忠诚是因为背叛的筹码太低。&lt;br /&gt;人间两件事不能等：行善和尽孝。&lt;br</summary>
+        
+      
+    
+    
+    
+    <category term="杂谈" scheme="https://anthoney.github.io/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于黄芪红枣枸杞水</title>
+    <link href="https://anthoney.github.io/2011/07/25/436-%E5%85%B3%E4%BA%8E%E9%BB%84%E8%8A%AA%E7%BA%A2%E6%9E%A3%E6%9E%B8%E6%9D%9E%E6%B0%B4/"/>
+    <id>https://anthoney.github.io/2011/07/25/436-%E5%85%B3%E4%BA%8E%E9%BB%84%E8%8A%AA%E7%BA%A2%E6%9E%A3%E6%9E%B8%E6%9D%9E%E6%B0%B4/</id>
+    <published>2011-07-25T14:23:09.000Z</published>
+    <updated>2023-09-08T08:21:24.307Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;还是注明出处，以免侵权&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br</summary>
+        
+      
+    
+    
+    
+    <category term="杂谈" scheme="https://anthoney.github.io/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>她拒绝了他100次，但第101次他拒绝了她!</title>
+    <link href="https://anthoney.github.io/2011/06/16/435-%E5%A5%B9%E6%8B%92%E7%BB%9D%E4%BA%86%E4%BB%96100%E6%AC%A1%EF%BC%8C%E4%BD%86%E7%AC%AC101%E6%AC%A1%E4%BB%96%E6%8B%92%E7%BB%9D%E4%BA%86%E5%A5%B9!/"/>
+    <id>https://anthoney.github.io/2011/06/16/435-%E5%A5%B9%E6%8B%92%E7%BB%9D%E4%BA%86%E4%BB%96100%E6%AC%A1%EF%BC%8C%E4%BD%86%E7%AC%AC101%E6%AC%A1%E4%BB%96%E6%8B%92%E7%BB%9D%E4%BA%86%E5%A5%B9!/</id>
+    <published>2011-06-16T11:42:02.000Z</published>
+    <updated>2023-09-08T08:21:24.308Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;她拒绝了他100次，但第101次他拒绝了她!&lt;br /&gt;【转自博士论坛，原文出处不详】&lt;br /&gt;昨天，他拒绝了她。&lt;br /&gt;　　　　一直以来，她以为他总会在她的身后跟随，不论她什么时候需要他。因为他说过，他会等她一辈子的。可是，他食言了。&lt;br</summary>
+        
+      
+    
+    
+    
+    <category term="心路" scheme="https://anthoney.github.io/categories/%E5%BF%83%E8%B7%AF/"/>
+    
+    
+  </entry>
+  
+</feed>
