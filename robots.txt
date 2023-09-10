@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://from2.net/sitemap.xml
+Sitemap: https://from2.net/baidusitemap.xml
