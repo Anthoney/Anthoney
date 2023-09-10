@@ -1,0 +1,690 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="From to Earth - 小事成就大事,细节成就完美"><title>Mapbasic（中文）参考手册 | From to Earth</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/latest/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/grids-responsive-min.min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/latest/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script src="https://www.googletagmanager.com/gtag/js?id=UA-14722977-1" async></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-14722977-1');
+</script><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/latest/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/latest/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/latest/toastr.min.css"><div class="darkmode-toggle">🌓</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+var toggle = document.querySelector('.darkmode-toggle');
+var html = document.querySelector('html');
+
+html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
+
+toggle.addEventListener('click', () => {
+localStorage.dark = !(html.dataset.dark == 'true');
+html.dataset.dark = localStorage.dark;
+});</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Mapbasic（中文）参考手册</h1><a id="logo" href="/.">From to Earth</a><p class="description">小事成就大事,细节成就完美</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Mapbasic（中文）参考手册</h1><div class="post-meta">2005-03-09<span> | </span><span class="category"><a href="/categories/GIS/">GIS</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 9.1k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 35</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><pre><font color="#0000ff" size="2">一 从功能查函数和语句
+二 各个语句和函数的功能说明
+三 参考手册原文关于句法字体的约定
+Mapbasic参考手册索引
+这本手册对MapBasic 编程语言中的每个语句和函数都进行了详细说明, 要学习MapBasic 语
+言编程的基本概念或者要学习开发环境的应用,请参考《用户手册》.
+**************************************************************************************8
+一.Mapbasic语言概述     TOP
+1.基本语法
+变量
+声明局部变量和全局变量 Dim,Global
+扩大或缩小数组变量 Redim,Ubound(),UnDim
+声明定制的数据结构 Type
+************************************************************************************************
+循环和分枝
+循环 For...Next,Exit for,Do...Loop,Exit Do,While...Wend
+分枝 If...Then,Do Case,Go To
+其它流程控制 End Program,Terminate Application,End Mapinfo
+************************************************************************************************
+输出和打印
+打印窗口内容 PrintWin
+输出文本到信息窗口 Print
+设置页面窗口 Layout,Create Frame,Set Window
+输出一个窗口内容到文件中 Save Window
+过程(Mn和Saiubs)
+定义一个过程 Declare Sub,Sub...End Sub
+调用一个过程 Call
+退出一个过程 Exit Sub
+Main过程 Main
+************************************************************************************************
+错误处理
+设置一个错误控制 OnError
+返回当前错误信息 Err(),Error$()
+从错误处理器返回 Resume
+摸拟一个错误 Error
+************************************************************************************************
+2.函数
+定制函数
+定义一个定制函数 Declare Function,Function...End Function
+退出一个函数 Exit Function
+************************************************************************************************
+数据转换函数
+转换字符串为代码的函数 Asc()
+转换代码为字符串的函数 Chr$()
+转换字符串为数字的函数 Val()
+数字转换成字符串的函数 Str$(),Format$()
+把数字或字符串转换成日期的函数 NumberToDate(),StringToDate()
+对象类型转换函数 ConvertToRegion(),ConvertToPline()
+字符串比较函数 Like(),StringCompare(),StringCompareIntl()
+重复字符串序列 Space$(),String$()
+把标注转换为文本的函数 Lablelinfo()
+************************************************************************************************
+日期和时间函数
+获取当前日期 CurDate()
+抽取日期的某个部分 Day(),Month(),Weekday(),Year()
+获取系统时间 Timer()
+数值或字符串转换成日期函数 NumberToDate(),StrintToDate()，FormatDate$()
+************************************************************************************************
+数学函数
+三角函数 Cos(),Sin(),Tan(),Acos(),Asin(),Atn()
+地理函数 Area(),Perimeter(),Distance(),ObjectLen()
+随机函数 Randomize,Rnd()
+符号函数 Abs(),Sgn()
+取整函数 Fix(),Int(),Round()
+其它数学函数 Exp(),Log(),Minimum(),Maximum(),Sqr()
+************************************************************************************************
+3.字符串函数
+大小写函数 UCase$(),LCase(),Proper$()
+子串查找函数 InStr()
+字符串提取函数 Left$(),Right$(),Mid$(),MidByte$()
+删除字符串首尾空格函数 LTrim$(),RTrim$()
+把数值格式化为字符串 Format$(),Str$(),Set Format,
+测定字符串长度 Len()
+把字符转换为代码 Chr$(),Asc$()
+字符串比较函数 Like(),StringCompare(),StringCompareIntl()
+重复字符串序列 Space$(),String$()
+获取单位名 UnitAbbr$(),UnitName$()
+************************************************************************************************
+4.表的操作
+建立和编辑表
+打开一个已存在的表 Open Table
+关闭一个或多个表 Close Table,Close All
+建立一个新的空表 Creat Table
+把一个文件转换为一个表 Register Table
+表/文件的输入/输出 Import,Export
+修改表的结构 Alter Table,Add Column,Creat Index,Drop Index,Creat Map,Drop Map 增
+加,编辑或删除行 Insert,Update,Delete
+整理表(删除空记录行) Pack Table
+控制表设置 Set Table
+保存表的最新编辑 Commit Table
+放弃表的最新编辑 Rollback
+重命名一个表 Rename Table
+删除一个表 Drop Table
+************************************************************************************************
+表的查询
+定位行光标 Fetch,EOT()
+迭择数据,操作选择命令 Select,SelectionInfo()
+按地址查找图对象 Find,Find Using,CommandInfo()
+按位置查找图对象 SearchPoint(),SearchRect(),SearchInfo()
+获取表的信息 NumTables(),TableInfo()
+获取列的信息 NumCols(),ColumnINfo()
+查询一个表的元数据 GetMetadata$(),Metadata
+查询无缝表 TableInfo(),GetSeamlessSheet()
+************************************************************************************************
+远程数据操作
+与服务器通讯 Server_Connect()
+开始远程服务器操作 Server Begin Transaction
+分配本机内存 Server Bind Column
+获取列信息 Server_ColumnInfo(),Server_NumCols()
+发送一个SQL语句 Server_Execute()
+定位行光标 Server Fetch,Server_EOT()
+保存变化 Server Commit
+放弃改变 Server Rollback
+释放远程资源 Server Close
+把远程数据变为可成图的 Server Creat Map
+改变对象格式 Server Ser Map
+使联结表同步 Server Refresh
+建立一个联结表 Server Link Table
+断开联结表 Unlink
+取消与服器的联结 Server Disconnect
+恢复驱动器信息 Server_DriverInfo(),Server_NumDrivers()
+获取QELib的联结句柄 Server_GetqeHConn()
+获取QELib的语句句柄 Server_GetqeHStmt()
+ODBC联结 Server_GetodbcHConn(),Server_GetodbcHStmt()
+************************************************************************************************
+5.非表文件操作
+文件的输入与输出
+打开或建立一个文件 Open File
+关闭一个文件 Close File
+删除一个文件 Kill
+重命名一个文件 Rename File
+复制一个文件 Save File
+从文件中读取数据 Get,Seek,Input #,Line Input #
+向一个文件写入数据 Put,Print #,Write #
+测定一个文件的状态 EOF(),LOF(),SeeK(),FileAttr(),FileExists()
+转变一个文件成表 Register Table
+克服共享错误 Set File Timeout
+************************************************************************************************
+文件与目录
+返回系统目录 ProgramDirectory$(),HomeDirectory$(),ApplicationDirectory$()
+提取文件名的某个部分 PathToTableName$(),PathToDirectory$(),PathToFileName$()
+返回完整文件名 TrueFileName$()
+让用户选择文件 FileOpenDlg(),FileSaveAsDlg()
+返回临时文件名 TempFileName$()
+************************************************************************************************
+6.Map和Graphy对象的操作
+创建Map对象
+创建语句 Create Arc,Create Ellipse,Create Frame,Create Line,Create Pline,Create
+Point,Create Rect,Create Region,Create RoundRect,Create Text,AutoLabel
+创建函数 CreateCircle(),CreateLine(),CreatePoint(),CreateText()
+高级操作 Create Object,Buffer()
+存对象于表中 Insert,Update
+************************************************************************************************
+编辑Map对象
+改变对象属性 Alter Object
+改变对象类型 ConvertToRegion(),ConvertToPLine()
+设置编辑目标 Set Target
+擦除对象某部分 Objects Erase,Erase(),Objects Intersect
+合并对象 Objects Combine,Combine(),Creat Object,Objects Split
+分离对象 Objects Split
+在交接部位增加结点 Objects OverLay,OverLayNodes()
+控制对象分辨率 Set Resolution
+存贮对象于表中 Insert,Update
+************************************************************************************************
+查询Map对象
+返回计算值 Area(),Perimeter(),Distance(),ObjectLen(),Overlap(),AreaOverlap(), ProportionOverlap()
+返回坐标值 ObjectGeography(),MBR(),ObjectNodeX(),ObjectNodeY(),Centroid(),
+CentroidX(),CentroidY(),ExtractNodes(),IntersectNodes()
+设置测量单位 Set Area Unites,Set Distance Unites,Set Paper Unites,UnitAbbr$(), UnitName$()
+设置坐标系统 Set CpprdSys
+返回式样设置 ObjectInfo()
+查询一个图层的标注 LabelFindByID(),LabelFindFirst(),LabelFindNext(),Labelinfo()
+************************************************************************************************
+对象式样的操作
+返回当前式样 CurrentPen(),CurrentBrush(),CurrentSymbol(),CurrentFont()
+返回式样属性 StyleAttr(),PenPattern()
+建立式样值 MakePen(),MakeBrush(),MakeFont(),MakeSymbol(),MakeCustomSymbol()
+MakeFontSymbol(),Set Style,RGB()
+查询对象的式样 ObjectInfo()
+修改对象式样 Alter Object
+重装符号式样 Reload Symbol
+式样子句 Pen clause,Brush clause,Symbol clause,Font clause
+************************************************************************************************
+Map窗的操作
+打开一个Map窗 Map
+增加一个图层 Add Map
+除去一个图层 Remove Map
+标注一个图层的对象 AutoLabel
+查询一个图的设置 MapperInfo(),LayerInfo()
+改变一个图的设置 Set Map
+建立或编辑专题图层 Shade,Set Shade,Create Ranges,Create Styles
+查询一个图层的标注 LabelfindByID(),LabelFindFirst(),LabelfindNext(),Labelinfo()
+************************************************************************************************
+7.建立用户介面
+按钮板(工具条)
+建立一个新按钮板 Creat ButtonPad
+修改一个按钮板 Alter ButtonPad
+修改一个按钮 Alter Button
+查询按钮板状态 BottonPadInfo
+对按钮使用的响应 CommandInfo
+恢复标准(默认)按钮板 Creat ButtonPads As Default
+************************************************************************************************
+对话框
+显示标准对话框 Ask(),Note,ProgressBar,FileOpenDlg(),FileSaveAsDlg()GetSeamlessShet()
+显示定制对话框 Dialog
+对话框处理器操作 Alter Control,TriggerControl(),ReadControlValue(),Dialog Preserve, Dialog remove
+检测用户是否按击OK CommandInfo(CMD_INDO_DIG_OK)
+使进度条不可用 SetProgressBars
+修改一个标准MAPINFO对话框 Alter MapInfoDialog
+************************************************************************************************
+菜单
+定义一个新菜单 Create Menu
+重定义菜单条 Create Menu Bar
+修改一个菜单 Alter Menu,Alter Menu Item
+修改菜单条 Alter Menu Bar,Menu Bar
+执行菜单命令 MenuitemInfoByHandler()
+查询某个菜单项的状态 MenuitemInfoByID()
+************************************************************************************************
+窗口
+显示或隐藏一个窗口 Open Window,Close Window,Set window
+打开一个新窗口 Map,Browse,Graph,Layout,Create Redistricter,Create Legend
+检测一个窗口的标识 FontWindow(),WindowID()
+修改一个已存在的窗口 Set Map,Shade,Add Map,Remove Map,Set Browse,Set Graph,Set Layout,
+Create Frame,Set Legend,Set Redistricter,StatusBar
+返回一个窗口的设置 WindowInfo(),MapperInfo(),LayerInfo()
+打印一个窗口 PrintWin
+控制窗口重画 Set Event Processing,Update Window
+计算窗口数 NumWindows(),NumAllWindows()
+隐藏浏览窗口中的列 Reproject
+************************************************************************************************
+系统事件处理器
+对选择的反应 SetChangeHandler
+对关闭窗口的反应 WinClosedHandler
+对图窗变化的反应 WinChangeHandler
+对窗口活化的反应 WinfocusChangedHandler
+对DDE请求的反应 RemoteMsgHandler,RemoteQueryHandler()
+对OLE自动化方法的反应 RemoteMapGenHandler
+提供定制工具 ToolHandler
+对应用程序结束的反应 EndHandler
+对MAPINFO获得或失去活化窗口的反应 forgroundTaskSwitchHandler
+使事件处理器不可用 Set Handler
+************************************************************************************************
+8.与别的应用程讯序的通讯
+DDE(动态数据交换,仅Windows)
+开始一个动态数据交换对话 DDEInitiate()
+发送一个动态数据交换命令 DDEExecute
+经由DDE(动态数据交换)发送一个值 DDEPoke
+经由DDE(动态数据交换)接收一个值 DDERequest$()
+关闭一个DDE(动态数据交换)对话 DDETerminate,DDETerminateAll
+对一个请求的响应 RemoteMsgHandler,RemoteQueryHandler,CommandInfo(CMD_INFO_ MSG)
+集成图(只限在Windows下)
+设置MAOINFO父窗口 Set Application Window
+设置一个Map窗的父窗口 Set Next Document
+建立一个图例窗口 Create Legend
+萍果机事件(只限在Macintosh下)
+开始一个对话 AEInitiate()
+发送DoScript事件 AEExecute()
+响应一个事件 RemoteMsgHandler
+************************************************************************************************
+9.特殊语句和函数
+起动另外的程序 Run Program
+返回系统信息 SystemInfo()
+把一个字符串作为解释命令执行 Run Command
+保存一个工作现场文件 Save Workerspace
+装入一个工作现场文件或MBX文件 Run Application
+设置数字化板 Set Digitizer
+发送一个声音到扬声器 Beep
+通过CommandInfo设置数据可读 Set Command Info
+设置拖位对象的延迟时间 Set Drag Threshold
+投影和坐标系统 ChooseProjection$()
+************************************************************************************************
+************************************************************************************************
+二.Mapbasic各函数和语句的名称及其作用     TOP
+语句和函数名称 所在页码 功能
+*****************
+Abs() 15    返回一个数的绝对值
+Acos() 16 返回一个数的反余弦值
+Add Column 17 在打开的表中,增加一临时的新列,或者用别的表的数据来更新一个已有的列
+Add Map 22 向Map窗加一图层
+AEExecute() 24 发送一个DoScript事件给萍果事件服务程序
+AEInitiate() 25 建立一个通过AEExecute()函数发送苹果事件时要用的苹果事件通道说明符
+Alter Botton 26 使按钮板(工具条)上的一个按钮可用,不可用,被选择或脱离选择
+Alter BottonPad 27 显示或隐藏按钮板,增加或去除按钮
+Alter Control 32 改变活化的定制对话框内控件的状态
+Alter MapInfoDialog 34 使Mapinfo标准对话框中的控件不可用,隐匿或被赋予新值
+Alter Menu 37 从一存在菜单中增加或去除某一菜单项
+Alter Menu Bar 40 增加或去除菜单条上的菜单
+Alter Menu Item 42 改变指定菜单项的状态(可用或不可用)
+Alter Object 44 修改一个对象的形状,位置或图形式样
+Alter Table 48 改变表结构(不能用于链结表)
+ApplicationDirectory$() 50 返回当前正在执行的MapBasic应用程序的路径字串
+Area() 51 面积函数，返回一个对象的地理面积
+AreaOverlap() 52 返回两个封闭对象重叠的面积
+Asc() 53 返回字符串头一字符的字符码[如Asc(&quot;Abcde&quot;)为65]
+Asin() 54 返回一个数的反正弦值
+Ask() 55 显示一个对话框给用户提出一个回答Yes/No（OK/Cancel )的问题
+Atn() 56 返回一个数的反正切值
+AutoLabel() 57 给出Map窗中的标注,并把标注存入装饰层
+*****************
+Beep 58 发出一个哔声
+Browse 59 打开一新的Browser窗口
+Brush 61 为图形对象指定一种填充式样
+Buffer() 63 返回代表一个缓冲区的区域对象（在已有对象的指定缓冲距离内的区域 ）
+BottonPadInfo() 64 返回有关按钮板的信息
+*****************
+Call 65 调用过程或外部子程序
+Centroid() 67 返回对象的形心（中心点）
+CentroidX() 68 返回对象形心的X坐标
+CentroidY() 69 返回对象形心的Y坐标
+CharSet 70 指定MapBasic用哪一套字符集作为解释字符码
+ChooseProjection$() 补124 显示选择投影对话框并返回用户选择的坐标系统
+Chr$() 73 返回对应指定字符码的单字符字串
+Close ALL 74 关闭所有打开的表
+Close File 75 关闭一个打开的文件
+Close Table 76 关闭一个打开的表
+Close Window 77 关闭或隐藏一个窗口
+ColumnInfo() 78 返回一打开表中某列的信息
+Combine() 80 返回代表两个对象联合的一个区域或折线
+CommandInfo() 81 返回最近事件的有关信息
+Commit Table() 85 把最新的编辑存盘或保存一个表的备份
+Continue 87 继续执行MapBasic程序（在Stop语句后）
+Control Button/OKButton/CancelButton 88 Dialog（对话框）语句的一部分，把一弹性按
+钮控件加到对话框内
+Control CheckBox 89 Dialog 语句的一部分，把一检查框控件加到对话框中
+Control EditText 90 Dialog语句的一部分，把一个编辑文本控件加到对话框中
+Control GroupBox 91 Dialog语句的一部分增加一个带标题的矩形框到对话框内
+Control ListBox/MultiListBox 92 Dialog语句的一部分，把一个列表控件加到对话框内，
+ListBox（列表框内）控件与MultiListBox（多选框）控件的区别仅在于用户
+可以在后者中通过Shift-Click一次选取多个项
+Control PenPicker/BrushPicker/SymbolPicker/FontPicker 94 Dialog语句的一部分，加上
+一个钮以显示线形，充填，符号（点）或字体（文本）的样式
+Control PopupMenu 95 Dialog语句的一部分，把一个弹出式菜单控件加到对话框内
+Control RadioGroup 97 Dialog语句的一部分，把一组无线电按钮加到对话框内
+Control StaticText 99 Dialog语句的一部分 ，把一个标注按钮加到对话框中
+ConvertToPline() 100 返回一个形状近似于某个对象的折线对象
+ConvertToRegion() 101 返回一个形状近似于某个对象的区域对象
+CoordSys 102 确定坐标系统
+Cos() 105 返回一个数的余弦
+Create Arc 106 创建一个弧
+Create ButtonPad 107 创建按钮板(工具条)
+Create ButtonPads As Default 110 创建系统默认的按钮板(工具条)恢复标准按钮板（如M
+ain按钮板）到它的默认状态
+Create Circle() 111 返回表示一个园的对象值
+Create Ellipse 113 创建一个椭园或园对象
+Create Frame 114 在页面窗中创建新框架
+Create Index 116 在一个打开表中为某列创建一个索引
+Create Legend 117 创建一个新的，与特定Map或Graph窗相连系的图例窗口
+CreateLine() 118 返回表示一条线的对象值
+Create Line 119 创建一个线对象
+Create Map 120 修改表的结构,使之可以以图形的形式显示
+Create Menu 121 新建或重定义一个菜单
+Create Menu Bar 127 重构整个菜单条（用可获得的菜单）
+Create Object 129 用Buffer、Ｍerge、Intersect或Union操作来创立一个或多个区域对象
+Create Pline 132 创建一个折线对象
+CreatePoint() 133 返回表示一个点的对象值
+Create Point 135 创建一个点对象
+Create Ranges 136 计算专题的各个区间值并将其存贮一数组中，然后能用于Ｓhade语句中
+Create Rect 139 创建一个矩形或正方形
+Create Redistricter 140 开始一个重新分区操作
+Create Region 141 创建区域对象
+Create Roundrect 143 创建一个圆角矩形对象
+Create Styles 144 组建一套线、充填或符号式样并将其贮存到一数组中
+Create Table 146 创建一新（属性）表
+CreateText() 148 返加一个为某特定Map窗创建的文本对象
+Create Text 150 为Map或Layout窗口创建一文本对象，如标题之类
+CurDate() 151，补121 返回当前日期（以YYYYMMDD格式）
+CurrentBrush() 152 返回当前正用的充填式样
+CurrentFont() 153 返回当前正用于Map和Ｌoyout窗的字体式样
+CurrentPen() 154 返回当前正用的线型
+CurrentSymbol() 155 返回当前正用的符号式样
+*****************
+Day() 156 返回日期表达式年月日中的日（部分）
+DDEExecute 157 通过一个打开的ＤＤＥ通道发送一条命令
+DDEInitiate() 158 初始化一个新的ＤＤＥ通道并返回一个连结的通道号
+DDEPoke 162 发送一个数据值到ＤＤＥ服务器应用程序中的某个项目
+DDERequest$() 163 返回一个从ＤＤＥ通话中获得的数据值
+DDETerminate 165 关闭一个动态数据交换通话
+DDETerminateALL 166 关闭先前被某些MapBasic程序打开的所有动态数据交换通话
+Declare Function 167 定义一个函数的名称及参数表
+Declare Sub 169 标识一个子过程的名字及参数表
+Define 172 用常数值定义一个定制的关键字（保留字）
+DeformatNumber$() 173 从表示一个数的字串中去除格式化
+Delete 174 从一个表中删除一个或多个图形对象，或一个或多个整行
+Dialog 175 显示一个定制对话框
+Dialog Preserve 181 在用户按击了ＯＫ或Cancel之后重新活化一个定制对话框
+Dialog Remove 182 从屏上移去一对话框
+Dim 183 定义一个或多个变量
+Distance() 187 返回两个位置之间的距离
+Do Case...End Case 188 根据一表达式的当前变量来决定执行哪一组语句
+Do...Loop 190 定义一个循环，它将执行到指定的条件变为ＴＲＵＥ（或ＦＡＬＳＥ）为止
+Drop Index 192 删除一个表的索引
+Drop Map 193 删除一个表中所有图形对象(不能用于链结表)
+Drop Table 194 全面地删除一个表
+*****************
+End MapInfo 195 结束MAPINFO
+End Program 196 结束MAPBASIC应用程序
+EndHandler 197 保留的过程名，一个应用程序结束时自动调用
+EOF() 198 如果MapBasic试图读一个文件尾返回ＴＲＵＥ，否则返回ＦＡＬＳＥ
+EOT() 199 如果MapBasic已经到达指定表的表尾返回ＴＲＵＥ，否则返回ＦＡＬＳＥ
+Erase() 200 返回通过擦除另一对象的一部分而建立的一个对象
+Err() 201 返回代表当前错误的一个数字代码
+Error 202 仿真错误条件的出现
+Error$() 203 返回一个描述当前错误的信息
+Exit Do 204 提前结束DO循环
+Exit For 205 提前结束FOR循环
+Exit function 206 退出一个 Functrion...End Function 结构
+Exit Sub 207 退出一个Sub过程
+Exp() 208 返回 e 的指定方次的一个数
+Exprot 209 把表输出成另一种文件格式
+ExtractNodes() 212 返回一个由已存在的对象的结点子集建立的折线或区域
+*****************
+Fetch 213 设置一个表的光标位置（即哪一行是当前行）
+FileAttr() 215 返回一打开文件的信息
+FileExists() 216 返回表示某个文件是否存在的逻辑值
+FileOpenDlg() 217 显示一个Ｆile Open对话框并返回用户所选择的文件名
+FileSaveAsDlg() 219 显示一个Save As对话框并返回用户所输入的文件名.
+Find 220 查找可成图的表中的一个位置
+Find Using 223 规定在随后的Ｆind操作中要搜索哪些表和哪些列
+Fix() 224 返回一个通过去掉一个十进制值的小数部分得到的整数值
+Font 225 指定一个文本式样
+For...Next 227 定义一个循环，它将执行指定的次数
+ForegroundTaskSwitchHandler 229 一个保留的过程名，它是在MapInfo获得了焦点（有了活
+化的应用程序）或失去了焦点（另一个应用程序变活）时自动调用的
+Format$() 230 返回一个表示定制格式的数的字串
+FormatNumber$() 232 返回一个表示含有千分位分隔符和小数点分隔符的数的字串（分隔符
+的样式与用户的系统配置相关）
+FrontWindow 233 返回活动窗口的整数标识
+Function...End function 234 定义一个定制函数
+*****************
+Get 237 从一个以二进制或随机存取模式打开的文件中读取
+GetMetadata$() 239 从一个表的中获取元数据
+GetSeamlessSheet() 240 提示用从无缝表中选择一个片，并返回被选片的名字
+Global 241 定义一个或多个全程变量
+Goto 242 跳转到由标号标识的另一个位置（在同一过程内）
+Graph 243 打开一新Graper窗口
+*****************
+HomeDirectory$() 244 返回一个表示用户的home目录路径的字串
+If...Then 245 根据一个或多个表达式决定执行哪一个语句块
+Inport 247 通过输入一个过去输出的文件，例如ＤＸＦ文件建立一个新的MapInfo表
+Include 250 包进一个单独的文本文件的内容，使之成为一个MapBasic程序的一部分
+Input # 251 读文件中的数据并将其保存在变量中
+Insert 252 向一个打开的表追加新行
+InStr() 254 返回指示一子串第一次出现在另一字串内的字符位
+Int() 255 返回去掉十进制小数部分的整数值
+InterSectNodes() 256 计算两个对象相交的点集，并返回一个包含各交点的折线对象
+Kill 257 删除文件
+*****************
+LabelFindbyID() 258 初始化一个内部标注指针，以便你能查询图层某个指定行的标注
+LabelFindFirst() 260 初始化一个内部标注指针，以便能查询某个图层的第一个标注
+LabelFindNext() 261 推进内部的标注指针，以便你能查询某个图层的下一个标注
+LabelInfo() 262 返回一个图的某个标注信息
+LayerInfo() 265 返回某Map窗的一图层的信息
+Layout 269 打开一新的页面窗口
+LCase$() 270 返回一字串的小写字符串
+Left$() 271 返回一个字符串的一部分或全部，从字符串的左端开始
+Len() 272 返回一个字符串的字符个数或一个变量的字节数
+Like() 273 返回ＴＲＵＥ或ＦＡＬＳＥ以表明一字符串是否符合格式匹配标准
+Line Input 274 从一个连续的文本文件中读一行赋给一个变量
+LOF() 275 返回一打开的文件的长度
+Log() 276 返回一个数的自然对数
+LTrim$() 277 去除字符串左端空格字符并返回结果
+*****************
+Main 278 一个应用程序运行时调用的第一个过程
+MakeBrush() 280 返回填充图案值
+MakeCustomSymbol() 281 返回基于一个ＢＭＰ文件的符号值
+MakeFont() 282 返回一个字体值
+MakeFontSymbol() 283 返回一个符号值，用出自ＴrueType字体的一个字符作为符号
+MakePen() 284 返回一线型值
+MakeSymbol() 285 返回一符号值，用出自MapInfo3.0版符号集的字符
+Map 286 打开一新Map窗
+MapperInfo() 288 返回一Map窗的坐标或距离
+Maximum() 290 返回两个数中之较大者
+MBR() 291 返回一矩形对象,代表限制另一对象的最小矩形
+Menu Bar 292 显示或隐藏菜单条
+MenuitemInfoByHandler() 293 返回MAPINFO菜单项的信息
+MenuitemInfoByID() 295 返回MAPINFO菜单项的信息
+Metadata 296 管理一个Table的元数据
+Mid$() 299 返回从另一字符串中间抽出的一个字符串
+MidByte$() 300 访问双字节系统的一个字符串中的单个字节
+Minimum() 301 返回两个数中的较小者
+Month() 302 返回年月日中的月(1-12)
+*****************
+Note 303 显示一个简单的信息于对话框中
+NumAllWindows() 304 返回MapInfo占有的窗口数,包括按钮板和信息窗之类的特殊窗口
+NumberToDate() 305 给定一个整数,返回一日期值
+NumCols() 306 返回一指定表的列数
+NumTables() 307 返回当前已打开表的个数
+Numwindows() 308 返回已打开的文档窗口的个数(Map,Browse,Graph,Layowt)
+*****************
+ObjectGeography() 309 返回一描述一图形对象的坐标或角度信息
+ObjectInfo() 311 返回描述一图形对象的线型,填充式样或其他值
+ObjectLen() 314 返回一直线或折线对象的地理长度
+ObjectNodeX() 315 返回区域或折线对象一接点的X坐标
+ObjectNodeY() 317 返回区域或折线对象一接点的Y坐标
+Objects Combine 318 联合在一个Ｔable中的对象，与MapInfo的Objects&gt;Combine 对应
+Objects Erase 320 删除目标对象被选择的部分；与Object&gt;Erase对应
+Objects Intersect 322 删除未被选择的目标对象部分；与Object&gt;EraseOutside对应
+Objects Overlay 323 在目标对象与当前所选对象相交的位置，向目标对象上增加结点
+Object Split 324 分离目标对象，用当前选择的对象作&ldquo;切割器&rdquo;
+OnError 326 使一错误处理子程序可用
+Open File 328 打开文件供输入或输出（input/ortput)
+Open Table 331 打开MapInfo 表供input/output
+Open Window 333 打开或显示一窗口
+Overlap() 334 返回一对象，代表两对象的地理相交部分，结果类似于MapInfo的Object&gt; Erase Outside
+OverlayNodes() 335 返回基于先存对象的一个对象，在它与第二个对象相交的地方加上了新结点
+*****************
+Pack Table 336 提供MapInfo的Table&gt;Maintenance&gt;Pack Table命令的功能
+PathToDirectory$() 337 给定一个文件标识，返回该文件目录
+PathToFileName$() 338 给定一个文件标识，仅返回文件名（不带目录）
+PathToTableName$() 339 给定一个完整的文件标识，返回一个代表Ｔable别名的字符串，如&quot;-1995-Data&quot;
+Pen 340 为图形对象指定一种线型
+Penpattern () frnction 补123 返回线条格式
+Perimeter() 342 返回图形对象的周长
+Print 343 在信息窗口中显示一个提示或状态信息
+Print # 345 把数据写入一个以顺序模式打开的文件（Output 或Append)
+PrintWin 346 打印一存在的窗口
+ProgramDirectory$() 347 返回安装MAPINFO的目录路径
+ProgressBar 348 显示一个带有CANCEL按钮和横向进度条的对话框
+Proper$() 351 返回大小写混合的字符串，每个词仅第一个字母大写
+ProportionOverlap() 352 返回一对象被另一对象履盖的百分比（数字）
+Put 353 把一个MAPINFO变量的内容写到一个打开的文件中
+*****************
+Randomize 354 初始化MapInfo的随机数函数
+ReadControlValue() 355 读取活化对话框中某一控件的当前状态
+ReDim 357 重定义数组变量
+Register Table 359 由电子表格/数据库/文本文件（不由栅格映象）构造MapInfo Table
+Reload Symbols 361 打开并重新装载MapInfo符号文件；这能改变显示于 Options&gt;Symbol Style
+对话框中的符号集
+RemoteMapGenHandler 362 一个保留的过程名，在OLE自动化的客应用程序调用MapGenHandler
+自动化方法时被调用
+RenotemsgHandler 363 一个保留的过程名，远端应用程序发送一个执行信息时调用
+RemoteQueryHandler() 365 一个特殊的函数，当一个MapInfo程序起着DDE的服务器作用，并
+且 这个DDE客应用程序执行一个&quot;Peek&quot;请求时调用
+Remove Map 367 从Map窗中移去一个或多个图层
+Rename File 368 改变一个文件的名字
+Rename Table 369 改变构成一个Ｔable的多个文件的名字（和位置）
+Reproject 370 指定（在被浏览的表中）下一次要显示的列
+Resume 371 从OnError错误处理器返回
+RGB() 372 返回由红、绿、兰三组份计算出的RGB彩色值
+Right$() 373 返回从一字符串右端开始的部分或全部字符
+Rnd() 374 返回一随机数
+Rollback 375 放弃一个Table的未存盘编辑
+Round() 376 返回由另一个数舍入而成的数
+RTrim$() 377 去除字符串右边的空格，返回其结果
+Run Application 378 运行一个MapBasic应用程序或增加一个MapInfo的工作现场
+Run Command 379 运行一个用字符串表示的MapBasic命令
+Run Menu Command 381 运行一个MapInfo菜单命令，如同用户选择一个菜单项，也能用于选
+择一个按钮板上的按钮
+Run Program 382 运行一可执行程序
+*****************
+Save File 383 复制一个文件
+Save Window 384 把一窗口图像存盘为一文件，与File&gt;SaveWimdow As对应
+Save Workerspace 386 创建一个表示当前MapInfo操作的工作现场文件
+SearchInfo() 387 返回SearchPomt()或 SeachRect()产生的搜索结果信息
+SearchPoint() 390 搜索给定Ｘ、Ｙ坐标位置上的Map对象
+SearchRect() 391 搜索绘完矩形范围内的Map对象
+Seek() 392 返回当前文件的位置
+Seek 393 设置当前文件位置，为下一个文件的输入输出作准备
+SelChangedHandler 394 一个保留的过程，被选择的若干行发生变化时自动调用
+Select 395 从一个或多个打开的表选择特定的若干行和列，并把所得的结果处理为一
+个单独的临时表，还提供数据排序和小计的功能
+SelectionInfo 403 返回有关当前选择的信息。注：所选择的标注不算&ldquo;选择&rdquo;，因为标注
+不是的完整的对象，它们只是另一对象的属性
+Server Begin Transation 404 要求远程服务器开始一个新工作单元
+Server Bind Column 405 指定能被远程服务器使用的本机存储器
+Server Close 407 释放与运行远程数据访问语句相联系的资源
+Server_ColumnInfo() 408 获取结果集中的列信息
+Server Commit 410 把当前工作单元保存到数据库中
+Server_Connect() 411， 补95 建立与远程数据服务器的通讯连系
+Server Create Map 427，补106 这个功能为服务器表标识空间信息，它增加空间列但不改变原表
+Server Disconnect 429 关闭经由Server-Connect建立起来的与远程数据服务器的通讯联系
+Server_DriverInfo() 430 获取已安装的工具箱和数据源的信息
+Server_EOT() 431 检测是否到达结果表的终点（经由 Server Fetch语句）
+Server_Execute() 432 发送一个在远程数据服务器上执行的字串
+Server Fetch 433 获取远程数据服务器中最后设置的行
+Server-GetodbcHConn() 补91 返回与远程数据库连接的ODBC连接句柄
+Server-GetodbcHStmt() 补92 返回与MapBasic Server语句相联系的ODBC语句句柄
+Server_GetqeHConn() 435 返回与远程数据库连接相关的qeLib联系句柄
+Server_GetqeStmt() 436 返回与MapBasic Server语句相关的qeLib语句句柄
+Server Link Table 437 建立连接表
+Server_NumCols() 439 获取结果集中的列数
+Server_NumDrivers() 440 返回为从MapInfo访问而在当前已安装的数据库连接工具箱个数
+Server Refresh 441 重新使连接表与远程数据库数据同步，这个命令只能在未对连接表进行
+编辑时使用
+Server Rollback 442 放弃对远程服务器作出的变化
+Server Set Map 443 改变ODBC表的对象类型
+Set Application Window 444 设定哪一个窗口为已打开的对话框的父窗
+Set Area Units 445 设置MapBasic默认的面积单位
+Set Browse 446 修改一个已存在的BROWSER窗口
+Set Command Info 447 把值存入内存中，别的过程可调用CommandInfo()来获取这些值
+Set CoordSys 448 设置MapBasic使用的坐标系统
+Set Digitizer 449 建立图纸在数字化板上的坐标，也打开或关闭数字化模式
+Set Distance Units 451 设置随后地理操作如创建对象要使用的距离单位
+Set Drag Threshold 452 设置拖拉图形对象要等待的延迟时间
+Set Event Processing 453 临时关闭或打开事件处理以避免不必要的屏幕更新
+Set File Timeout 454 当文件共享冲突发生时让MapInfo 重试文件I/O操作
+Set Format 455 控制MapBasic如何处理表示日期或数值的字符串
+Set Graph 457 修改一个已存在的Graph窗口
+Set Handler 461 使自动调用系统处理器过程（如SelChangeHandler）可能或不能
+Set Layout 462 修改一个已存在的Layout窗口
+Set Legend 464 修改Legend（图例）窗口
+Set Map 466 修改一个已存在的Map 窗口
+Set Next Document 477 使一MapInfo 档案窗口重新成为父窗(以便一个Map窗变为一个VB应
+用程序 的子窗）
+Set Paper Unites 479 设置描述屏幕大小和位置量度的纸单位
+Set ProgressBars 480 设置禁止或允许进度条对话框显示
+Set Redistricter 481 在重分区操作时改变分区表的特征
+Set Resolution 483 设置对象的编辑分辨率；当一个对象转变为另一对象类型时控制着配给
+对象的结点数
+Set Shade 484 修改一个专题(Thematic)图层
+Set Style 485 重置当前的线型、充填式样、符号或字体类型
+Set Table 486 设置一打开表的各属性
+Set Target 488 设置或删除正在编辑的Ｍap的目标对象
+Set Window 489 改变窗口位置、大小、标题或状态
+Sgn() 493 返回符号-1,0,1以表明所指定的数是负的、零或正的
+Shade 494，补109 建立一专题图层并把它加到一己存在的Ｍap窗中
+Sin() 503 返回一个数（弧度）的正弦
+Space$() 504 返回一个仅由空格组成的字符串
+Sqr() 505 返回一个数的平方根
+StatusBar 506，补108 显示或隐匿状态条，或在其中显示一条简要信息
+Stop 507 把一个正在运行的MapBasic 应用程序挂起来，以便调试
+Str$() 508 返回表示一个表达式的字串（如一个数的打印输出）
+String$() 509 返回一个由重复－指定的字符若干次构成的字符串
+StringCompare() 510 执行区分大小写的字符串比较
+StringCompareIntl() 511 执行区分语言的字符串比较
+StringToDate() 512 给定字符串返回日期值
+StyleAttr() 513，补93 返回线型/填充式样/字体/符号的某种属性
+Sub...End Sub 515 定义一过程，然后可用Call调用
+Symbol 517 为点对象指定一符号式样
+SystemInfo() 520 返回操作系统或软件版信息
+*****************
+TableInfo() 522 返回一打开表的信息
+Tan() 525 返回一个数的正切
+TempfileName$() 526 返回建立一个临时文件能用的名字
+Terminate Application 527 结束一正在运行或睡眠的MapBasic应用程序
+Timer() 528 返回所间隔的时间（秒)
+ToolHandler 529 保留的过程名；与特殊的工具按钮（Mapbasic工具）一起工作
+TriggerControl() 531 返回(确定)最近被用户选择的对话框控件的ＩＤ标识
+TruefileName$() 532 返回一完整的文件标识，给定部分标识
+Type 533 定义一个定制变量类型，它能用于随后的Dim和Globel语句中
+*****************
+UBound() 534 返回一数组的当前大小
+UCase$() 535 返回一大写字符串
+UnDim 536 取消对一变量的定义
+UnitAbbr$() 537 返回表示Mapinfo标准单位名的缩写式样字串
+UniteName$() 538 返回表示Mapinfo标准单位名的全称(字符串）
+Unlink 539 用Unlink语句去掉与曾用Server Link Table语句从远程数据库下载并连结的表的联系
+Update 540 更新一个表的一行或多行
+Update Window 541 强迫Mapinfo对一个窗口完成进行中的全部改变
+*****************
+Val() 542 返回一个字符串代表的数值
+Weekday() 543 返回从１－７的一个整数，表示一指定日期的周日
+While...Wend 544 定义一个循环（执行到指定条件被判断为ＴＲＵＥ时）
+WinChangedHandler 545 一个保留的过程，某个Map窗被缩放时或某个图层被加进或移去时被自动调用
+WinCloseHandler 546 一个保留的过程在Ｍap,Browse,Graph,Layout,Redistricting,Mapbasic
+窗口关闭时被自动调用
+WindowID() 547 返回一Mapinfo窗口标识
+WindowInfo() 548 返回一窗口信息
+WinfocusChangedHandler 551 一个保留的过程名，窗口焦点变化时自动调用
+Write # 552 把数据写到一打开文件中
+Year() 553 返回年月日中的年
+************************************************************************************************
+************************************************************************************************
+三、约定    TOP
+约定 意义
+If,Call,Map,Browse,Area 第一个字母大写的黑体字是MapBasic的关键字（保留字）。 本手
+册内各个关键字的首字都是大写的，不过，在你写MapBasic程序时，你可以用 大写、小写或
+二者混合输入关键字。
+Main,Integer,Pen,Object 首字母大写的非黑体字通常是特殊的过程名或变量类型。
+table,handler,window_id 斜体代表MapBasic语句的参数。你完成一个MapBasic语句时，必
+须为各个参数提供一个相应的表达式。
+[window...id],[Interactive] 出现在方括号内的关键字或参数是可选的。
+{On|Off} 一个句法表达式出现在花括号内时，内含有一个关键字或参数列表，它们之间是由
+竖线字符分隔的。你必须选择其中之一。例如，在左面的样品中，你应该或者选择On，或者选
+择Off。
+Note&quot;Hello,wored!&quot; 实际的程序样品是用这种字体（curier黑体）表示的。
+</font></pre></div><div class="tags"></div><div class="post-nav"><a class="pre" href="/2005/03/15/17-103%E9%83%A8%E6%9C%80%E4%BD%B3%E5%8D%8E%E8%AF%AD%E7%89%87/">103部最佳华语片</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://anthoney.github.io"/></form></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="关于"><img class="nofancybox" src="/img/avatar.png"/></a><p>To be a better man.</p><a class="info-icon" href="https://twitter.com/yontaw" title="Twitter" target="_blank" style="margin-inline:5px"> <i class="fa fa-twitter-square" style="margin-inline:5px"></i></a><a class="info-icon" href="mailto:admin@from2.net" title="Email" target="_blank" style="margin-inline:5px"> <i class="fa fa-envelope-square" style="margin-inline:5px"></i></a><a class="info-icon" href="https://github.com/anthoney" title="Github" target="_blank" style="margin-inline:5px"> <i class="fa fa-github-square" style="margin-inline:5px"></i></a><a class="info-icon" href="/atom.xml" title="RSS" target="_blank" style="margin-inline:5px"> <i class="fa fa-rss-square" style="margin-inline:5px"></i></a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/GIS/">GIS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86/">人文地理</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%90%83%E5%96%9D%E7%8E%A9%E4%B9%90/">吃喝玩乐</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%96%E8%AF%AD/">外语</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BD%B1%E9%9F%B3%E5%9B%BE%E5%BD%A2/">影音图形</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BF%83%E8%B7%AF/">心路</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/">软件技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%A3%9E%E8%A1%8C%E6%A2%A6%E6%83%B3/">飞行梦想</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2023/09/10/456-%E7%A9%BA%E9%97%B4%E5%88%B0%E6%9C%9F%E6%8D%A2/">用了17年的域名空间到期了，换了一个新的</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/09/30/455-FlexNet%20lmtools%20license%20vitual%20adapter%20Revit%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E7%BD%91%E5%8D%A1/">FlexNet lmtools license vitual adapter Revit配置虚拟网卡</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/02/08/454-%E6%88%BF%E5%B1%8B%E5%9D%90%E5%90%91%E4%BB%A5%E4%BB%80%E4%B9%88%E4%B8%BA%E5%87%86%20%E6%88%BF%E5%B1%8B%E5%9D%90%E5%90%91%E6%80%8E%E4%B9%88%E7%9C%8B/">房屋坐向以什么为准 房屋坐向怎么看</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/01/12/453-FME%20Desktop%202021%20for%20Mac%E5%AE%89%E8%A3%85%E8%B8%A9%E5%9D%91%E6%95%99%E7%A8%8B/">FME Desktop 2021 for Mac安装踩坑教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/29/452-%E4%BF%9D%E5%8F%B7google%20voice%E9%99%84%E4%BD%BF%E7%94%A8%E5%BB%BA%E8%AE%AE/">保号google voice附使用建议</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/14/451-5G%20Wifi%20Router%20Band%20Channel%20limit%E4%BF%AE%E6%94%B95GWIFI%E8%B7%AF%E7%94%B1%E4%B8%AD%E5%9B%BD%E9%A2%91%E6%AE%B5%E9%99%90%E5%88%B6/">5G Wifi Router Band Channel limit修改5GWIFI路由中国频段限制</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/22/450-%E8%80%81%E6%AC%BEiPhone%E5%8F%98%E6%85%A2%E5%8D%A1%E9%A1%BF%E6%8E%89%E5%B8%A7%E5%8F%91%E7%83%AD%E5%88%87%E6%8D%A2%E8%BF%9F%E7%BC%93%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E5%88%86%E4%BA%AB/">老款iPhone变慢卡顿掉帧发热切换迟缓解决方法分享</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/13/449-python%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E5%81%8F%E6%96%B9/">python中文字符乱码解决偏方</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/06/02/448-Python%20opencv%20error%20215%20imshow%20%E9%97%AE%E9%A2%98/">Python opencv error 215 imshow 问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/04/04/447-python%20faild_install_package%20%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">python faild_install_package 报错解决办法</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2023 <a href="/." rel="nofollow">From to Earth.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.js"></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
