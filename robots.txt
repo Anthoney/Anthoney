@@ -3,3 +3,5 @@ Allow: /
 
 Sitemap: https://from2.net/sitemap.xml
 Sitemap: https://from2.net/baidusitemap.xml
+
+<sitemap_location>/sitemap.xml</sitemap_location>
